@@ -1,0 +1,51 @@
+.add {
+    padding: 4%;
+
+h1 {
+   @include gradient3;
+   text-align: center;
+   font-size: 55px;
+   font-weight: 400;
+}
+img {
+    width: 100%;
+    object-fit: cover;
+}
+&__container {
+    border-top: 1px solid $color2;
+    border-bottom: 1px solid $color2;
+    padding: 2% 0 2% 0;
+    display: grid;
+    grid-template: 1fr/repeat(4,1fr);
+    column-gap: 1%;
+}
+&__image {
+    position: relative;
+}
+&__text {
+    position: absolute;
+    color: $color1;
+    padding-left: 5%;
+    bottom: 1%;
+    font-size: 25px;
+    font-weight: 300;
+}
+@media screen and (max-width: 1000px) {
+    h1 {
+        font-size: 35px;
+    }
+    .add__container {
+        display: grid;
+        grid-template: repeat(2,1fr)/repeat(2,1fr);
+        justify-content: center;
+    }
+}
+@media screen and (max-width: 680px) {
+    h1 {
+        font-size: 25px;
+    }
+    &__text {
+        font-size: 15px;
+    }
+}
+}

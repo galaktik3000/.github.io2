@@ -1,0 +1,39 @@
+.plan {
+    padding: 2% 5% 2% 5%;
+
+&__container {
+    display: grid;
+    grid-template: 1fr/repeat(3,1fr);
+}
+&__containerbase {
+    border: 1px solid $color2;
+    display: flex;  
+    column-gap: 3%;
+    padding: 5%;
+
+}
+p {
+    margin: 0;
+}
+&__text1 {
+    font-size: 39px;
+    font-weight: 300;
+    @include gradient1;
+}
+&__text2 {
+    font-size: 23px;
+    color: $color1;
+    
+}
+@media screen and (max-width: 1000px) {
+    .plan__container {
+        grid-template:repeat(3,1fr)/1fr ;
+    }
+    .plan__text1{
+        font-size: 30px;
+    }
+    .plan__text2 {
+        font-size: 20px;
+    }
+}
+}

@@ -1,0 +1,14 @@
+.scroll {
+
+&__container {
+    padding-top: 1%;
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    column-gap: 1%;
+
+    img {
+        flex: 0 0 auto;
+    }
+}
+}

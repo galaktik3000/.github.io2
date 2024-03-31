@@ -1,0 +1,108 @@
+.email {
+    padding: 4% 4% 2% 4%;
+   
+&__container{
+    border-top: 2px solid $color2;
+    border-bottom: 2px solid $color2;
+}
+p {
+    font-size: 25px;
+    color: $color1;
+    font-weight: 300;
+}
+&__text {
+    padding: 0 15% 3% 15%;
+    text-align: center;
+    h1{
+        margin-bottom: 0;
+        font-size: 45px;
+        font-weight: 400;
+        @include gradient1;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+&__buttons {
+    display: flex;
+    padding: 0 5% 2% 5%;
+    column-gap: 2%;
+}
+input[type="text"], input[type="tel"] {
+    width: 30%;
+    padding: 3% 2% 3% 3%;
+    background: #1a1a1a;
+    border: 0;
+}
+input::placeholder {
+    font-size: 28px;
+    font-weight: 200;
+    color: $color1;
+}
+input{
+    color: $color1;
+    font-size: 30px;
+}
+input:focus {
+    color: $color1;
+    font-size: 30px;
+}
+&__buttonbase {
+    display: flex;
+    cursor: pointer;
+}
+&__button {
+    @extend %button3;
+    p{
+       font-weight: 600;
+       font-size: 28px;
+       color: black;
+    }
+}
+@media screen and (max-width: 1000px) {
+    .email__buttons {
+        align-items: center;
+        display: grid;
+        grid-template: repeat(3,1fr)/1fr;
+    }
+    input[type="text"], input[type="tel"] {
+        width: 50%;
+    }
+    input::placeholder {
+        font-size: 24px;
+        font-weight: 200;
+        color: $color1;
+    }
+    input{
+        color: $color1;
+        font-size: 26px;
+    }   
+}
+@media screen and (max-width: 680px) {
+    p {
+        font-size: 20px;
+    }
+    .email__text {
+        padding: 0;
+        h1 {
+            font-size: 30px;
+        }
+    }
+    input[type="text"], input[type="tel"] {
+        width: 70%;
+    }
+    input::placeholder {
+        font-size: 20px;
+        font-weight: 200;
+        color: $color1;
+    }
+    input{
+        color: $color1;
+        font-size: 22px;
+    } 
+    input:focus {
+        color: $color1;
+        font-size: 23px;   
+    }
+}
+}

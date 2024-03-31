@@ -1,0 +1,61 @@
+body {
+   background-color: #252525; 
+   font-family: 'Montserrat', sans-serif;
+   margin: auto;
+}
+$color1: rgba(255, 255, 255, 1);
+$color2: rgba(255, 255, 255, 0.3);
+$color3: rgba(255, 255, 255, 0.75);
+h1 {
+   font-family: 'Gilroy-Regular', sans-serif;
+}
+%button1 {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right,#F6A0A2, #FE7D11);
+  border-radius: 8px;
+  padding: 0 3% 0 3%;
+}
+%button2 {
+  display: flex;
+  align-items: center;
+  border-radius: 14px;
+  padding: 1% 2% 1% 2%;
+  color: #FFAB5D;
+  background-color: white; 
+}
+%button3 {
+  display: flex;
+  align-items: center;
+  background-image: linear-gradient(to right,#F6A0A2, #FE7D11);
+  padding: 0 10% 0 10%;
+}
+%gradient1 {
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right,#F6A0A2, #FE7D11);
+}
+@mixin gradient1 {
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right,#F6A0A2, #FE7D11);
+}
+
+@mixin gradient2 {
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right,#2763FD, #FFFFFF);
+}
+@mixin gradient3 {
+  color: transparent;    
+	-webkit-background-clip: text;
+	background-clip: text;
+	background-image: linear-gradient(to right,#8087C6,#B84D00);
+}
+@mixin footer-things {
+  display: flex;
+  flex-direction: column;
+}
